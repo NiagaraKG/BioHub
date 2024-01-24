@@ -1,0 +1,250 @@
+
+/*Header*/
+nav {
+    width: 100%;
+    background-color: #ffffff;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 10px #dadada;
+    position: sticky;
+    top: 0;
+    justify-content: space-between; 
+    
+}
+
+#logo {
+    margin-left: 20px;
+}
+
+#logo img {
+    height: 70px;
+    width: 300px;
+}
+
+nav h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0c7f3c;
+    font-size: 60px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+    font-size: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li a::after {
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 3px;
+}
+
+nav ul li a:hover,
+nav ul li .active {
+    color: #0b9444;
+    transition: .2s all ease-in-out;
+}
+
+nav ul li a:hover::after {
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: #0b9444;
+    animation: underline .5s;
+}
+
+@keyframes underline {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.dropdown {
+    float: left;    
+}
+
+.dropdown .dropbtn {
+    padding: 5px;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    outline: none;
+    background-color: transparent;    
+}
+
+.dropdown:hover .dropbtn {
+    color: #0b9444;
+    transition: .2s all ease-in-out;
+}
+
+.dropbtn .active {
+    color: #0b9444;
+    transition: .2s all ease-in-out;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #e6ffe6;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    background-color: #ffffff;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-btn{
+    display: none;
+}
+
+/*Footer*/
+.footer-links {
+    display: flex;
+    align-items: center;
+    background-color: #e6ffe6;
+    box-shadow: 0px 2px 10px #dadada;
+}
+
+.footer-col {
+    padding: 50px;
+}
+
+.footer-col img {
+    width: 100%;
+    height: auto;
+}
+
+#f1 {
+    flex: 2.976;
+}
+
+#f2 {
+    flex: 3.922;
+}
+
+#f3 {
+    flex: 1.568;
+}
+
+#f4 {
+    flex: 1.3898;
+}
+
+
+.copyright {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;    
+    font-weight: lighter;
+    font-size: small;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: #0c7f3c;
+}
+
+@media(max-width: 900px){
+    #logo{
+        margin-left: 0px;
+        width: 70%;
+    }
+    .hideOnMobile{
+        display: none;
+    }
+    .dropbtn .hideOnMobile{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }    
+    .copyright{
+        font-size: small;
+    }
+    #b1
+    {
+        display: block;
+        margin: auto;
+    }
+    #mdrop{
+        position: relative;
+    }
+    #mdrop a{
+        text-align: center;
+    }
+    .sidebar{
+        width: 50%;
+    }  
+}
+
+@media(max-width: 600px){
+    .footer-links{
+        flex-direction: column;
+        align-items: center;
+    }
+    #f1, #f2, #f3, #f4 {
+        flex: none;
+        width: 65%;
+        padding: 5vw;
+    }
+    .sidebar{
+        width: 100%;
+    }    
+}

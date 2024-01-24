@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meat-catalog>
+    <producer>
+        <id>1</id>
+        <image-src>../img/partners/meat1.PNG</image-src>
+        <name>Дивата Ферма</name>
+        <product>телешко</product>
+        <location>Горно поле</location>
+        <website>https://divataferma.com/</website>
+    </producer>
+    <producer>
+        <id>2</id>
+        <image-src>../img/partners/meat2.jpg</image-src>
+        <name>Месони</name>
+        <product>колбаси</product>
+        <location>Силистра</location>
+        <website>https://mesoni.bg/</website>
+    </producer>
+    <producer>
+        <id>3</id>
+        <image-src>../img/partners/meat3.PNG</image-src>
+        <name>SunnyFarm</name>
+        <product>пилешко</product>
+        <location>Абланица</location>
+        <website>https://sunnyfarm.bg/</website>
+    </producer>
+    <producer>
+        <id>4</id>
+        <image-src>../img/partners/meat4.PNG</image-src>
+        <name>Вивенда</name>
+        <product>смесени меса</product>
+        <location>София</location>
+        <website>https://vivenda.bg/</website>
+    </producer>
+    <producer>
+        <id>5</id>
+        <image-src>../img/partners/meat5.png</image-src>
+        <name>Ферма Гурмазово</name>
+        <product>пилешко</product>
+        <location>Гурмазово</location>
+        <website>https://fermagurmazovo.com/</website>
+    </producer>
+    <producer>
+        <id>6</id>
+        <image-src>../img/partners/meat6.PNG</image-src>
+        <name>Ферма Гората</name>
+        <product>говеждо</product>
+        <location>М. Градище</location>
+        <website>https://fermagorata.com/</website>
+    </producer>
+</meat-catalog>

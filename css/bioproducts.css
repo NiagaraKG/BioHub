@@ -1,0 +1,137 @@
+/*Bioproducts*/
+#bioproducts-top{
+    
+    background-image: url("/img/honey.jpeg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: table;
+    width: 100%;
+}
+#bioproducts-top h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+    margin: auto;
+    text-shadow: 2px 2px 2px #343333;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bioproducts-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 40px 60px;  
+    margin: auto;
+    width: 70%;
+    
+}
+.bioproducts-container .drop{   
+    position: relative;
+    width: 350px;
+    height: 350px;    
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05),
+    25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    transition: 0.5% ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#meat{
+    background: #f9f3f3;
+    border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%;
+}
+#milk{
+    background: #e7edef;
+    border-radius: 73% 27% 59% 41% / 57% 59% 41% 43%;
+}
+#honey{
+    background: #f5f4ee;
+    border-radius: 35% 65% 31% 69% / 57% 59% 41% 43%;
+}
+#fruit{
+    background: #e6ebe8;
+    border-radius: 43% 57% 61% 39% / 24% 42% 58% 76%;
+}
+.bioproducts-container .drop:hover{
+    border-radius: 50%;
+}
+.bioproducts-container .drop::before
+{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 85px;
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+.bioproducts-container .drop::after
+{
+    content: "";
+    position: absolute;
+    top: 90px;
+    left: 110px;
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+.content{
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+}
+.content button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+#meat .content button{
+    color: rgb(186, 14, 14);
+}
+#milk .content button{
+    color: rgb(45, 109, 228);
+}
+#honey .content button{
+    color: rgb(255, 167, 4);
+}
+#fruit .content button{
+    color: rgb(14, 182, 87);
+}
+
+#bioproducts-bottom{
+    
+    background-image: url("/img/vegetables.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 470px) {
+    #bioproducts-top h1{
+        font-size: 12vw;
+    }
+}

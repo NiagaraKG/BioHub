@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.png" />
+    <title>Контакти</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <script src="js/contacts.js"></script>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</head>
+
+<body>
+    <!--Page header-->
+    <header>
+        <nav>
+            <a id="logo" href="index.html"> <img src="img/logo.png" alt="лого"> </a>    
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="team.html">Екип</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn" id="b1">Партньори</button>
+                    <div class="dropdown-content" id="mdrop">
+                        <a href="plant-protection.html">Растителна защита</a>
+                        <a href="bioproducts.html">Биопродукция</a>
+                </li>
+                <li><a href="contacts.html" class="active">Контакти</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="index.html">Начало</a></li>
+                <li class="hideOnMobile"><a href="team.html">Екип</a></li>
+                <li class="dropdown" class="hideOnMobile">
+                    <button class="dropbtn hideOnMobile">Партньори</button>
+                    <div class="dropdown-content" class="hideOnMobile">
+                        <a href="plant-protection.html">Растителна защита</a>
+                        <a href="bioproducts.html">Биопродукция</a>
+                </li>
+                <li class="hideOnMobile"><a href="contacts.html" class="active">Контакти</a></li>
+                <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main content-->
+    <div id="main">
+        <div class="container-pc">
+            <div class="contacts">
+                <h2>Контакти централа</h2>
+                <ul class="info">
+                    <li>
+                        <span><img src="img/address.png"></span>
+                        <span>гр. Плевен ул."Иван Вазов" 7</span>
+                    </li>
+                    <li>
+                        <span><img src="img/phone.png"></span>
+                        <span>0887126359</span>
+                    </li>
+                    <li>
+                        <span><img src="img/mail.png"></span>
+                        <span>center@bh.com</span>
+                    </li>
+                </ul>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2898.3970661889066!2d24.616315676101657!3d43.41053007111469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40abf4ac53db90b9%3A0x90067b2c2a1848d6!2z0YPQuy4g4oCe0JjQstCw0L0g0JLQsNC30L7QsuKAnCA3LCA1ODAwINCf0LvQtdCy0LXQvSDQptC10L3RgtGK0YAsINCf0LvQtdCy0LXQvQ!5e0!3m2!1sbg!2sbg!4v1686124720237!5m2!1sbg!2sbg"
+                    width="350" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="img/fb.png"></a></li>
+                    <li><a href="https://twitter.com/?lang=bg" target="_blank"><img src="img/twitter.png"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="img/insta.png"></a></li>
+                </ul>
+            </div>
+            <div class="contactForm">
+                <h2>Свържете се с нас!</h2>
+                <form id="formBox" onsubmit="return(send());">
+                    <div class="inputBox w50">
+                        <input type="text" name="name" placeholder="Име/Фирма:*" required>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="product" placeholder="Вашият продукт:*" required>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="location" placeholder="Населено място:*" required>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="phone" placeholder="Телефон за контакт:*" required>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="email" name="mail" placeholder="Имейл:">
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="website" placeholder="Вашият сайт:">
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea name="notes" placeholder="Бележки:"></textarea>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="submit" value="Изпрати">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="container-mobile">
+            <div class="contacts-mobile">
+                <h2>Контакти централа</h2>
+                <div class="info">
+                    <div>
+                        <img src="img/address.png">
+                        <span>гр. Плевен ул."Иван Вазов" 7</span>
+                    </div>
+                    <div>
+                        <img src="img/phone.png">
+                        <span>0887126359</span>
+                    </div>
+                    <div>
+                        <img src="img/mail.png">
+                        <span>center@bh.com</span>
+                    </div>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2898.3970661889066!2d24.616315676101657!3d43.41053007111469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40abf4ac53db90b9%3A0x90067b2c2a1848d6!2z0YPQuy4g4oCe0JjQstCw0L0g0JLQsNC30L7QsuKAnCA3LCA1ODAwINCf0LvQtdCy0LXQvSDQptC10L3RgtGK0YAsINCf0LvQtdCy0LXQvQ!5e0!3m2!1sbg!2sbg!4v1686124720237!5m2!1sbg!2sbg"
+                    width="350" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="sci">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="img/fb.png"></a>
+                    <a href="https://twitter.com/?lang=bg" target="_blank"><img src="img/twitter.png"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="img/insta.png"></a>
+                </div>
+            </div>
+            <div class="contactForm-mobile">
+                <h2>Свържете се с нас!</h2>
+                <form id="formBox" onsubmit="return(send());">
+                    <div class="inputBox w100">
+                        <input type="text" name="name" placeholder="Име/Фирма:*" required>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="text" name="product" placeholder="Вашият продукт:*" required>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="text" name="location" placeholder="Населено място:*" required>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="text" name="phone" placeholder="Телефон за контакт:*" required>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="email" name="mail" placeholder="Имейл:">
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="text" name="website" placeholder="Вашият сайт:">
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea name="notes" placeholder="Бележки:"></textarea>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="submit" value="Изпрати">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Page footer-->
+    <footer>
+        <div class="footer-links">
+            <div class="footer-col" id="f1">
+                <a href="https://www.sbpb.bg/" target="_blank"> <img src="img/SBPB-logo.png" alt="СБПБ лого"> </a>
+            </div>
+            <div class="footer-col" id="f2">
+                <a href="https://bgbio.eu/" target="_blank"> <img src="img/logo-bab.png" alt="БАБ лого"> </a>
+            </div>
+            <div class="footer-col" id="f3">
+                <a href="https://www.mzh.government.bg/bg/" target="_blank"> <img src="img/mzh-logo.png" alt="МЗХ лого">
+                </a>
+            </div>
+            <div class="footer-col" id="f4">
+                <a href="https://bioreg.mzh.government.bg/" target="_blank"> <img src="img/bio-database-logo.png"
+                        alt="Регистър на биоземеделието лого"> </a>
+            </div>
+        </div>
+        <div class="bottom">
+            <p class="copyright">Copyright &copy; 2024 Ниагара Георгиева ФН: 223010012 ВСУ "Черноризец Храбър" <br> Сайтът е направен с учебна цел 
+                <br><a href="map.html">Карта на сайта</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

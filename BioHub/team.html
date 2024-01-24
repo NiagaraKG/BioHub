@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.png" />
+    <title>Екип</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/team.css">
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Page header-->
+    <header>
+        <nav>
+            <a id="logo" href="index.html"> <img src="img/logo.png" alt="лого"> </a>    
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="team.html" class="active">Екип</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn" id="b1">Партньори</button>
+                    <div class="dropdown-content" id="mdrop" id="mdrop">
+                        <a href="plant-protection.html">Растителна защита</a>
+                        <a href="bioproducts.html">Биопродукция</a>
+                </li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="index.html">Начало</a></li>
+                <li class="hideOnMobile"><a href="team.html" class="active">Екип</a></li>
+                <li class="dropdown" class="hideOnMobile">
+                    <button class="dropbtn hideOnMobile">Партньори</button>
+                    <div class="dropdown-content" class="hideOnMobile">
+                        <a href="plant-protection.html">Растителна защита</a>
+                        <a href="bioproducts.html">Биопродукция</a>
+                </li>
+                <li class="hideOnMobile"><a href="contacts.html">Контакти</a></li>
+                <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main content-->
+    <div id="team-top">       
+        <h1>Нашият екип</h1>
+    </div>
+
+    <div id="main">
+        <div class="container">
+            <div class="icon">
+                <div class="imgBox active" style="--i:1;" data-id="NW">
+                    <img src="img/NW.png">
+                </div>
+                <div class="imgBox" style="--i:2;" data-id="NC">
+                    <img src="img/NC.png">
+                </div>
+                <div class="imgBox" style="--i:3;" data-id="NE">
+                    <img src="img/NE.png">
+                </div>
+                <div class="imgBox" style="--i:4;" data-id="SE">
+                    <img src="img/SE.png">
+                </div>
+                <div class="imgBox" style="--i:5;" data-id="SC">
+                    <img src="img/SC.png">
+                </div>
+                <div class="imgBox" style="--i:6;" data-id="SW">
+                    <img src="img/SW.png">
+                </div>
+            </div>
+            <div class="content">
+                <div class="contentBox active" id="NW">
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="img/NW-person.jpg">
+                        </div>
+                        <div class="textBox">
+                            <h2>Ивана Кирчева<br><span>Северозападен регион</span></h2>
+                            <ul class="contacts">
+                                <li>
+                                    <p>Телефон: 0885041278</p>
+                                </li>
+                                <li>
+                                    <p>Имейл: ivana.kircheva@bh.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBox" id="NC">
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="img/NC-person.jpg">
+                        </div>
+                        <div class="textBox">
+                            <h2>Росен Младенов<br><span>Северен централен регион</span></h2>
+                            <ul class="contacts">
+                                <li>
+                                    <p>Телефон: 0898374052</p>
+                                </li>
+                                <li>
+                                    <p>Имейл: rosen.mladenov@bh.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBox" id="NE">
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="img/NE-person.jpg">
+                        </div>
+                        <div class="textBox">
+                            <h2>Анна Попова<br><span>Североизточен регион</span></h2>
+                            <ul class="contacts">
+                                <li>
+                                    <p>Телефон: 0883252091</p>
+                                </li>
+                                <li>
+                                    <p>Имейл: anna.popova@bh.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBox" id="SE">
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="img/SE-person.jpg">
+                        </div>
+                        <div class="textBox">
+                            <h2>Райна Велева<br><span>Югоизточен регион</span></h2>
+                            <ul class="contacts">
+                                <li>
+                                    <p>Телефон: 0874068355</p>
+                                </li>
+                                <li>
+                                    <p>Имейл: raina.veleva@bh.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBox" id="SC">
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="img/SC-person.jpg">
+                        </div>
+                        <div class="textBox">
+                            <h2>Борис Илков<br><span>Южен централен регион</span></h2>
+                            <ul class="contacts">
+                                <li>
+                                    <p>Телефон: 0882716458</p>
+                                </li>
+                                <li>
+                                    <p>Имейл: boris.ilkov@bh.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBox" id="SW">
+                    <div class="card">
+                        <div class="imgBox">
+                            <img src="img/SW-person.jpg">
+                        </div>
+                        <div class="textBox">
+                            <h2>Васил Монов<br><span>Югозападен регион</span></h2>
+                            <ul class="contacts">
+                                <li>
+                                    <p>Телефон: 0886721490</p>
+                                </li>
+                                <li>
+                                    <p>Имейл: vasil.monov@bh.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mContainer">        
+            <div class="mcard">
+                <div class="imgBox">
+                    <img src="img/NW-mobile.png">
+                </div>
+                <div class="textBox">
+                    <h2>Ивана Кирчева<br><span>Северозападен регион</span></h2>
+                    <h6>0885041278<br>ivana.kircheva@bh.com</h6>
+                </div>
+            </div>
+            <div class="mcard">
+                <div class="imgBox">
+                    <img src="img/NC-mobile.png">
+                </div>
+                <div class="textBox">
+                    <h2>Росен Младенов<br><span>Северен централен регион</span></h2>
+                    <h6>0898374052<br>rosen.mladenov@bh.com</h6>
+                </div>
+            </div>
+            <div class="mcard">
+                <div class="imgBox">
+                    <img src="img/NE-mobile.png">
+                </div>
+                <div class="textBox">
+                    <h2>Анна Попова<br><span>Северооизточен регион</span></h2>
+                    <h6>0883252091<br>anna.popova@bh.com</h6>
+                </div>
+            </div>
+                <div class="mcard">
+                    <div class="imgBox">
+                        <img src="img/SW-mobile.png">
+                    </div>
+                    <div class="textBox">
+                        <h2>Васил Монов<br><span>Югозападен регион</span></h2>
+                        <h6>0886721490<br>vasil.monov@bh.com</h6>
+                    </div>
+                </div>
+                <div class="mcard">
+                    <div class="imgBox">
+                        <img src="img/SC-mobile.png">
+                    </div>
+                    <div class="textBox">
+                        <h2>Борис Илков<br><span>Южен централен регион</span></h2>
+                        <h6>0882716458<br>boris.ilkov@bh.com</h6>
+                        
+                    </div>
+                </div>
+                <div class="mcard">
+                    <div class="imgBox">
+                        <img src="img/SE-mobile.png">
+                    </div>
+                    <div class="textBox">
+                        <h2>Райна Велева<br><span>Югоизточен регион</span></h2>
+                        <h6>0874068355<br>raina.veleva@bh.com</h6>
+                        
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+    <script src="js/team.js"></script>
+
+    <div id="team-bottom"></div>
+    <!--Page footer-->
+    <footer>
+        <div class="footer-links">
+            <div class="footer-col" id="f1">
+                <a href="https://www.sbpb.bg/" target="_blank"> <img src="img/SBPB-logo.png" alt="СБПБ лого"> </a>
+            </div>
+            <div class="footer-col" id="f2">
+                <a href="https://bgbio.eu/" target="_blank"> <img src="img/logo-bab.png" alt="БАБ лого"> </a>
+            </div>
+            <div class="footer-col" id="f3">
+                <a href="https://www.mzh.government.bg/bg/" target="_blank"> <img src="img/mzh-logo.png" alt="МЗХ лого">
+                </a>
+            </div>
+            <div class="footer-col" id="f4">
+                <a href="https://bioreg.mzh.government.bg/" target="_blank"> <img src="img/bio-database-logo.png"
+                        alt="Регистър на биоземеделието лого"> </a>
+            </div>
+        </div>
+        <div class="bottom">
+            <p class="copyright">Copyright &copy; 2024 Ниагара Георгиева ФН: 223010012 ВСУ "Черноризец Храбър" <br> Сайтът е направен с учебна цел 
+                <br><a href="map.html">Карта на сайта</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

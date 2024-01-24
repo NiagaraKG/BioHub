@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.png" />
+    <title>BioHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</head>
+
+<body>
+    <!--Page header-->
+    <header>
+        <nav>
+            <a id="logo" href="index.html"> <img src="img/logo.png" alt="лого"> </a>    
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html" class="active">Начало</a></li>
+                <li><a href="team.html">Екип</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn" id="b1">Партньори</button>
+                    <div class="dropdown-content" id="mdrop">
+                        <a href="plant-protection.html">Растителна защита</a>
+                        <a href="bioproducts.html">Биопродукция</a>
+                </li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="index.html" class="active">Начало</a></li>
+                <li class="hideOnMobile"><a href="team.html">Екип</a></li>
+                <li class="dropdown" class="hideOnMobile">
+                    <button class="dropbtn hideOnMobile">Партньори</button>
+                    <div class="dropdown-content" class="hideOnMobile">
+                        <a href="plant-protection.html">Растителна защита</a>
+                        <a href="bioproducts.html">Биопродукция</a>
+                </li>
+                <li class="hideOnMobile"><a href="contacts.html">Контакти</a></li>
+                <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main content-->
+    <div id="top"> </div>
+    <div class="row">
+        <div class="column-text" >
+            <h3>За нас</h3>
+            <p class="text">BioHub е платформа, изградена от млади хора, загрижени за околната среда. 
+                Целта ни е да подпомогнем разрастването на биоземеделието като свържем клиенти с производители на биопродукти 
+                и земеделци с разпространители на биосредства за растителна защита. 
+                По този начин даваме възможност на физически лица и новозапочващи фирми да продават стоката си в региона и извън него.</p>
+        </div>
+        <div class="column-image">
+            <img src="img/together.png">
+        </div>
+    </div>
+    <div id="grow"> </div>
+    <div class="row">
+        <div class="column-image">
+            <img src="img/work.jpg">
+        </div>
+        <div class="column-text" >
+            <h3>Как работи BioHub?</h3>
+            <p class="text">Ако се занимавате с биостопанство и искате да рекламираме вашата стока, свържете се с нашия координатор за вашия регион или попълнете контактната форма в сайта.
+                Нашия екип ще се свърже с вас и ще изготви персонален план за популяризиране на вашия продукт. Ще добавим вашия бизнес към нашите партньори. 
+                Можем да съдействаме с изготвянето на ваш личен уебсайт, ако нямате такъв, както и с популяризиране в социални мрежи и специализирани форуми за биопроизводители.
+            </p>
+        </div>       
+    </div>
+   <div class="banner">
+        <video autoplay loop muted>
+            <source src="img/paper-plane.mp4" type="video/mp4">
+        </video>   
+        <div class="btn">
+            <a href="contacts.html">Стани наш партньор</a>
+        </div>
+    </div>
+
+    <!--Page footer-->
+    <footer>
+        <div class="footer-links">
+            <div class="footer-col" id="f1">
+                <a href="https://www.sbpb.bg/" target="_blank"> <img src="img/SBPB-logo.png" alt="СБПБ лого"> </a>
+            </div>
+            <div class="footer-col" id="f2">
+                <a href="https://bgbio.eu/" target="_blank"> <img src="img/logo-bab.png" alt="БАБ лого"> </a>
+            </div>
+            <div class="footer-col" id="f3">
+                <a href="https://www.mzh.government.bg/bg/" target="_blank"> <img src="img/mzh-logo.png" alt="МЗХ лого">
+                </a>
+            </div>
+            <div class="footer-col" id="f4">
+                <a href="https://bioreg.mzh.government.bg/" target="_blank"> <img src="img/bio-database-logo.png"
+                        alt="Регистър на биоземеделието лого"> </a>
+            </div>
+        </div>
+        <div class="bottom">
+            <p class="copyright">Copyright &copy; 2024 Ниагара Георгиева ФН: 223010012 ВСУ "Черноризец Храбър" <br> Сайтът е направен с учебна цел 
+                <br><a href="map.html">Карта на сайта</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
